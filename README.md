@@ -1,5 +1,6 @@
 ![](img/previewTokio.png)
 ![](img/previewChicago.png)
+
 # Ejercicio de práctica:
 
 - Aplicacion  que proporciona información meteorológica de diferentes ciudades.
