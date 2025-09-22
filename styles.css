@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Limelight", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(115, 133, 115);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.card {
+  width: 600px;
+  height: 300px;
+  border: 6px double rgb(210, 187, 156);
+  border-radius: 10px;
+  background-color: rgb(161, 52, 32);
+  color: rgb(210, 187, 156);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: relative;
+
+  .poster {
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    border: 2px solid rgb(161, 52, 32);
+  }
+
+  .paragraph {
+    width: 50%;
+    margin: auto;
+  }
+
+  #weather-icon {
+    position: absolute;
+    left: 90%;
+    top: 1%;
+  }
+
+  /* display: none; */
+}
+
+.main {
+  width: 600px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 6px double rgb(210, 187, 156);
+  border-radius: 10px;
+  background-color: rgb(161, 52, 32);
+  font-size: 2em;
+  color: rgb(210, 187, 156);
+  /* display: none; */
+}
+
+.label {
+  margin: 2px;
+  margin: auto;
+  color: rgb(5, 124, 124);
+}
+
+.select {
+  all: unset;
+  background-color: rgb(210, 187, 156);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: rgb(3, 71, 71);
+  font-size: 0.5em;
+  margin: auto;
+  padding: 3px;
+}
+
+.btn {
+  width: 85px;
+  height: 70px;
+  background-color: rgb(210, 187, 156);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: auto;
+  color: rgb(3, 71, 71);
+  font-size: 0.5em;
+  margin: auto;
+  padding: auto;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.95);
+  transition: transform 0.5s;
+  border-bottom-width: 2px;
+  background-image: linear-gradient(rgb(3, 71, 71), rgb(131, 95, 28));
+  color: rgb(210, 187, 156);
+}

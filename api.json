@@ -1,0 +1,61 @@
+{
+  "weather": [
+    {
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "https://cdn.freecodecamp.org/weather-icons/01n.png"
+    }
+  ],
+  "main": {
+    "temp": 2.62,
+    "feels_like": 0.84,
+    "temp_min": 1.72,
+    "temp_max": 3.49,
+    "pressure": 1010,
+    "humidity": 81
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 1.79,
+    "deg": 285,
+    "gust": 3.13
+  },
+  "name": "London"
+}
+const data = {
+  weather: [
+    {
+      main: "Clear",
+      description: "clear sky",
+      icon: "https://cdn.freecodecamp.org/weather-icons/01n.png",
+    },
+  ],
+  main: {
+    temp: 2.62,
+    feels_like: 0.84,
+    temp_min: 1.72,
+    temp_max: 3.49,
+    pressure: 1010,
+    humidity: 81,
+  },
+  visibility: 10000,
+  wind: {
+    speed: 1.79,
+    deg: 285,
+    gust: 3.13,
+  },
+  name: "London",
+};
+
+console.log(data.weather[0].main);
+console.log(data.weather[0].description);
+console.log(data.weather[0].icon);
+
+console.log(data.main.temp);
+console.log(data.main.feels_like);
+console.log(data.main.humidity);
+
+console.log(data.wind.speed);
+console.log(data.wind.gust);
+
+console.log(data.name);

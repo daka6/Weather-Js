@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="img/calido.png" type="image/x-icon">
+  <title>Weather App</title>
+</head>
+
+<body>
+  <section id="main" class="main">
+    <label for="weather" class="label">Select a city</label>
+    <select name="city-select" id="city-select" class="select">
+      <option value=""></option>
+      <option value="new york">New York</option>
+      <option value="los angeles">Los Angeles</option>
+      <option value="chicago">Chicago</option>
+      <option value="paris">Paris</option>
+      <option value="tokyo">Tokyo</option>
+      <option value="london">London</option>
+    </select>
+    <button id="get-forecast" class="btn">Get forecast</button>
+  </section>
+
+  <section id="container">
+    <div id="card" hidden>
+      <img class="poster" width="200" height="300" alt="" id="poster">
+      <p class="paragraph" id="location">Location: </p>
+      <img alt="icon" id="weather-icon">
+      <p class="paragraph" id="weather-main">Weather Main: </p>
+      <p class="paragraph" id="main-temperature">Main Temperature: </p>
+      <p class="paragraph" id="feels-like">Feels Like: </p>
+      <p class="paragraph" id="humidity">Humidity: </p>
+      <p class="paragraph" id="wind">Wind: </p>
+      <p class="paragraph" id="wind-gust">Wind Gust: </p>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
